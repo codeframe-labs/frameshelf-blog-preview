@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FrameShelf · 블로그 연동 시안</title><link rel="stylesheet" href="preview.css"></head>
+<body>
+<button id="review-toggle" class="toggle" aria-label="시안 조작 열기" aria-controls="review-panel" aria-expanded="false">시안</button>
+<main class="preview-shell">
+<aside id="review-panel" class="review-panel" aria-label="시안 조작" data-open="false">
+<h1>강의에서 글로</h1><p class="subtitle">FrameShelf · 블로그 연동<br>목업 · 예시 데이터</p>
+<div class="review-label">글쓰기 흐름</div>
+<nav class="review-nav" aria-label="목업 화면"><button data-state="writing" aria-current="page">글쓰기</button><button data-state="new">새 글 작성</button><button data-state="existing">기존 글 불러오기</button><button data-state="tags">태그 편집</button></nav>
+<div class="review-label">글 목록</div><nav class="review-nav" aria-label="목록 화면"><button data-state="drafts">작성 중 목록</button><button data-state="posts">게시글 목록</button></nav>
+<a class="preview-link" id="full-preview" href="workspace.html?state=writing" target="_blank" rel="noopener">전체 미리보기 ↗</a>
+<div class="review-copy"><p>기존 글을 검색해 불러오고, 같은 글을 이어서 작성합니다.</p><p>태그를 추가하고 목록을 나눠 확인합니다. 영상·대본·글쓰기 패널은 제목을 끌어 옮깁니다.</p><p>게시는 시연이며 공개하지 않습니다. 예시 글은 이 브라우저에 저장합니다.</p></div>
+</aside>
+<div class="preview"><iframe id="preview-frame" src="workspace.html?state=writing" title="블로그 연동 전체 화면 시안"></iframe></div>
+</main><script type="module" src="preview.mjs"></script>
+</body></html>
